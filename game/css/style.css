@@ -1,0 +1,38 @@
+/* NOVA DRIFT page chrome: a dark backdrop, the canvas centred and glowing. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #02030a;
+  color: #8fa8c8;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage {
+  text-align: center;
+  padding: 12px;
+}
+
+canvas {
+  display: block;
+  width: min(1280px, 96vw);
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 42px rgba(77, 243, 255, 0.22), 0 0 120px rgba(64, 40, 140, 0.35);
+  background: #04050f;
+  cursor: crosshair;
+}
+
+.hint {
+  margin: 12px 0 0;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
